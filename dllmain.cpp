@@ -28,8 +28,8 @@ static void __stdcall EAXSound_Update_Hook(float t)
 void Init()
 {
     uintptr_t loc_5814A8 = 0x5814A8;
-    pEAXSound_Update = static_cast<uintptr_t>(injector::GetBranchDestination(0x5814A8));
-    injector::MakeCALL(0x5814A8, EAXSound_Update_Hook);
+    pEAXSound_Update = static_cast<uintptr_t>(injector::GetBranchDestination(loc_5814A8));
+    injector::MakeCALL(loc_5814A8, EAXSound_Update_Hook);
 }
 
 BOOL APIENTRY DllMain( HMODULE hModule,
